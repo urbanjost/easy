@@ -1,9 +1,9 @@
 # CONCEPT UNDER DEVELOPMENT
-# CONCEPT UNDER DEVELOPMENT
-# CONCEPT UNDER DEVELOPMENT
-# CONCEPT UNDER DEVELOPMENT
-# CONCEPT UNDER DEVELOPMENT
-![pocketwatch](docs/images/M_time.3m_time.gif)
+## CONCEPT UNDER DEVELOPMENT
+### CONCEPT UNDER DEVELOPMENT
+#### CONCEPT UNDER DEVELOPMENT
+##### CONCEPT UNDER DEVELOPMENT
+![selfy](docs/images/selfy.gif)
 
 ## NAME
    easy -  an example github fpm repository
@@ -106,8 +106,8 @@ git push -u origin main
 ## BUILDING with FPM
 
 ```bash
-     git clone https://github.com/urbanjost/M_time.git
-     cd M_time
+     git clone https://github.com/urbanjost/easy.git
+     cd easy
      fpm test
 ```
 or just list it as a dependency in your fpm.toml project file.
@@ -125,7 +125,7 @@ or just list it as a dependency in your fpm.toml project file.
 
 ### ford
 
-- [ford(1) output](https://urbanjost.github.io/M_time/fpm-ford/index.html).
+- [ford(1) output](https://urbanjost.github.io/easy/fpm-ford/index.html).
 
 ## SEE ALSO
 

@@ -1,0 +1,240 @@
+# TOML file for fpm as described at https://github.com/fortran-lang/fpm/blob/master/manifest-reference.md
+#
+###############################################################################
+# update replacing "easy" by the name of your project, which is best kept as a lowercase name that meets
+# the rules for a Fortran variable name.
+#
+# Change "John Doe" and "johndoe" in these metadata lables to your own name.
+# The same with the descriptions of your project as well
+#
+# Pay particular attention to the license field and the associated LICENSE file, and change it as
+# appropriate. A common value is "MIT".
+###############################################################################
+name = "easy"
+version = "0.1.0"
+license = "license"
+author = "John Doe"
+maintainer = "johndoe@gmail.com"
+copyright = "2021 John Doe"
+description = "getting started with github and fpm(1)"
+categories = ["time"]
+keywords = ["fortran", "time", "space" ]
+homepage = "https://github.com/johndoe/easy.git"
+
+[install]
+###############################################################################
+# if you are building a library and/or modules you might want to uncomment
+# this so the install subcommand will install it instead of installing just applications
+###############################################################################
+#library=true
+
+###############################################################################
+# A sample showing a dependency just for the tests and not your other components
+###############################################################################
+#[[test]]
+#name="runTests"
+#source-dir="test/"
+#main="test_suite_easy.f90"
+#[test.dependencies]
+#M_msg          = { git = "https://github.com/urbanjost/M_msg.git" }
+
+[dependencies]
+###############################################################################
+# These are example fpm(1) packages that you can uncomment that will then
+# become available to be called by your package
+###############################################################################
+
+# blas = { git = "https://github.com/brocolis/blas.git" }
+# blas : The BLAS (Basic Linear Algebra Subprograms) are routines that provide standard building blocks for performing basic vector and matrix operations.
+
+# cairo-fortran : Fortran bindings for libcairo
+# cairo-fortran = { git = "https://github.com/brocolis/cairo-fortran.git" }
+
+# c-util : C Utility Functions For Fortran.
+# c-util = { git = "https://github.com/brocolis/c-util.git" }
+
+# datetime = { git = "https://github.com/wavebitscientific/datetime-fortran" }
+
+# dftd4 : Generally Applicable Atomic-Charge Dependent London Dispersion Correction
+# dftd4 = { git = "https://github.com/dftd4/dftd4" }
+
+# dynload-base : Dynamic loader of C libraries for Fortran.
+# dynload-base = { git = "https://github.com/brocolis/dynload-base.git" }
+
+# dynload-julia : Dynamically load Julia from Fortran.
+# dynload-julia = { git = "https://github.com/brocolis/dynload-julia.git" }
+
+# dynload-pcre : Dynamically load libpcre from Fortran.
+# dynload-pcre = { git = "https://github.com/brocolis/dynload-pcre.git" }
+
+# fftpack : FFTPACK is a package of Fortran subprograms for the fast
+#           Fourier transform of periodic and other symmetric sequences. It includes
+#           complex, real, sine, cosine, and quarter-wave transforms.
+# fftpack = { git = "https://github.com/brocolis/fftpack.git" }
+
+# fhash = { git = "https://github.com/LKedward/fhash" }
+# fhash : Implements a hash table type with support for generic keys and values.
+
+# finterp = { git = "https://github.com/jacobwilliams/finterp" }
+# finterp : Modern Fortran Multidimensional Linear Interpolation
+
+# forlab : A Fortran module that provides a lot of functions for scientific computing
+# forlab = { git = "https://github.com/zoziha/forlab" }
+
+# fpm-dict : fpm plug-in to look up words and descriptions on WWW using fortran-curl(3f)/libcurl(3c)
+# fpm-dict = { git = "https://github.com/urbanjost/fpm-dict" }
+
+# fpm = { git = "https://github.com/fortran-lang/fpm" }
+
+# fpm-man : display Fortran intrinsics documentation
+# fpm-man = { git = "https://github.com/urbanjost/fpm-man" }
+
+# fpm-search = { git = "https://github.com/brocolis/fpm-search" }
+
+# fpm-time : fpm plug-in to generate timing profiles using gprof(1)
+# fpm-time = { git = "https://github.com/urbanjost/fpm-time" }
+
+# functional = { git = "https://github.com/wavebitscientific/functional-fortran" }
+
+# general-purpose-fortran = { git = "https://github.com/urbanjost/general-purpose-fortran" }
+# general-purpose-fortran : GPF (General Purpose Fortran)
+
+# iso_varying_string = { git = "https://gitlab.com/everythingfunctional/iso_varying_string" }
+
+# jsonff = { git = "https://gitlab.com/everythingfunctional/jsonff" }
+
+# lapack = { git = "http://github.com/Reference-LAPACK/lapack" }
+# lapack : LAPACK ("Linear Algebra Package") is a standard software
+#          library for numerical linear algebra. It provides routines for solving
+#          systems of linear equations and linear least squares, eigenvalue problems,
+#          and singular value decomposition. It also includes routines to implement
+#          the associated matrix factorizations such as LU, QR, Cholesky and Schur
+#          decomposition.
+
+# linpack = { git = "http://localhost/example/linpack" }
+
+# M_calcomp : an old Calcomp look-alike graphics library. Not for new large code development
+# M_calcomp = { git = "https://github.com/urbanjost/M_calcomp" }
+
+# M_calculator : basic numeric expression parser
+# M_calculator = { git = "https://github.com/urbanjost/M_calculator" }
+
+# M_change : Basic Regular Expressions
+# M_change = { git = "https://github.com/urbanjost/M_change" }
+
+# M_CLI2 = { git = "https://github.com/urbanjost/M_CLI2" }
+# M_CLI2 : Unix-style commandline parsing using a prototype command
+
+# M_CLI = { git = "https://github.com/urbanjost/M_CLI" }
+# M_CLI : Unix-style commandline parsing using a prototype command and NAMELIST (STD:f2008)
+
+# M_color : conversions between common color models 
+# M_color = { git = "https://github.com/urbanjost/M_color" }
+
+# mctc-gcp : Geometrical Counter-Poise correction
+# mctc-gcp = { git = "https://github.com/grimme-lab/gcp.git" }
+
+# mctc-lib = { git = "https://github.com/grimme-lab/mctc-lib.git" }
+# mctc-lib : Modular computation tool chain library
+
+# M_draw : basic vector graphics package
+# M_draw = { git = "https://github.com/urbanjost/M_draw" }
+
+# M_escape : ANSI control escape sequences using an XML-like syntax for attributes like color on video displays and emulators
+# M_escape = { git = "https://github.com/urbanjost/M_escape" }
+
+# M_history = { git = "https://github.com/urbanjost/M_history" }
+# M_history : Input History Editor
+
+# minpack = { git = "https://github.com/certik/minpack.git" }
+# minpack : Minpack includes software for solving nonlinear equations and nonlinear least squares problems.
+
+# M_intrinsics = { git = "https://github.com/urbanjost/M_intrinsics" }
+# M_intrinsics : module of text descriptions of Fortran intrinsics and features
+
+# M_io = { git = "https://github.com/urbanjost/M_io" }
+# M_io : I/O-related tools
+
+# M_kracken95 :  command line parsing using Fortran 95 (LICENSE:PD)
+# M_kracken95 = { git = "https://github.com/urbanjost/M_kracken95" }
+
+# M_list = { git = "https://github.com/urbanjost/M_list" }
+# M_list : string manipulation (STD:2008)
+
+# M_match : Basic Regular Expressions
+# M_match = { git = "https://github.com/urbanjost/M_match" }
+
+# M_msg : converts any standard scalar type to a string and support unit testing
+# M_msg = { git = "https://github.com/urbanjost/M_msg" }
+
+# M_ncurses : Fortran-callable interfae to the C library ncurses(3c)
+# M_ncurses = { git = "https://github.com/urbanjost/M_ncurses" }
+
+# M_path : basic numeric expression parser
+# M_path = { git = "https://github.com/urbanjost/M_path" }
+
+# M_pixel : basic vector drawing into a pixel graphics format
+# M_pixel = { git = "https://github.com/urbanjost/M_pixel" }
+
+# M_process = { git = "https://github.com/urbanjost/M_process" }
+# M_process : ISO_C_BINDING interface to popen(3c) and related system procedures 
+
+# M_readline : Fortran-callable interfae to the C input history editor readline(3c)
+# M_readline = { git = "https://github.com/urbanjost/M_readline" }
+
+# M_slices = { git = "https://github.com/urbanjost/M_slices" }
+# M_slices :  produce basic slice plot on POSIX systems with X11 Windows
+
+# M_sort = { git = "https://github.com/urbanjost/M_sort" }
+
+# mstore = { git = "https://github.com/grimme-lab/mstore.git" }
+# mstore : Molecular structure store for testing
+
+# M_strings = { git = "https://github.com/urbanjost/M_strings" }
+# M_strings : string manipulation
+
+# M_system = { git = "https://github.com/urbanjost/M_system" }
+# M_system : (mostly)POSIX system routine interface
+
+# M_time : date and time conversion, formatting and computation 
+# M_time = { git = "https://github.com/urbanjost/M_time" }
+
+# multicharge = { git = "https://github.com/grimme-lab/multicharge.git" }
+
+# M_uuid = { git = "https://github.com/urbanjost/M_uuid" }
+# M_uuid : module to produce a UUID string
+
+# neural-fortran = { git = "https://github.com/modern-fortran/neural-fortran" }
+
+# nlopt-f = { git = "https://github.com/grimme-lab/nlopt-f" }
+# nlopt-f : Interface to NLopt library
+
+# os-id = { git = "https://github.com/brocolis/os-id.git" }
+# os-id : Operating system identification for Fortran.
+
+# pointsets = { git = "https://github.com/arjenmarkus/pointsets" }
+
+# quadpack = { git = "https://github.com/brocolis/quadpack.git" }
+# quadpack : Quadpack is a Fortran 77 library for numerical integration of one-dimensional functions.
+
+# quaff = { git = "https://gitlab.com/everythingfunctional/quaff" }
+
+# s-dftd3 = { git = "https://github.com/awvwgk/simple-dftd3.git" }
+# s-dftd3 : Simple reimplementation of the DFT-D3 method
+
+# sqliteff = { git = "https://gitlab.com/everythingfunctional/sqliteff" }
+
+# stdlib-fpm = { git = "https://github.com/LKedward/stdlib-fpm" }
+
+# strff = { git = "https://gitlab.com/everythingfunctional/strff" }
+
+# tblite = { git = "https://github.com/awvwgk/tblite" }
+# tblite : Light-weight tight-binding framework
+
+# test-drive = { git = "https://github.com/awvwgk/test-drive" }
+# test-drive : The simple testing framework
+
+# toml-f = { git = "https://github.com/toml-f/toml-f.git" }
+# toml-f : TOML parser implementation for data serialization and deserialization
+
+# vegetables = { git = "https://gitlab.com/everythingfunctional/vegetables" }

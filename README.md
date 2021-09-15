@@ -4,6 +4,9 @@
 #### CONCEPT UNDER DEVELOPMENT
 ##### CONCEPT UNDER DEVELOPMENT
 ![selfy](docs/images/selfy.gif)
+#### [CHANGELOG](CHANGELOG.md) and BUILD ACTION STATUS
+---
+
 
 ## NAME
    easy -  an example github fpm repository
@@ -116,10 +119,6 @@ or just list it as a dependency in your fpm.toml project file.
      [dependencies]
      M_time        = { git = "https://github.com/urbanjost/M_time.git" }
 ```
----
-## [CHANGELOG](CHANGELOG.md)
----
-
 
 ## DEVELOPER DOCUMENTATION
 

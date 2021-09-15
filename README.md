@@ -58,66 +58,88 @@ want to write some Fortran code, right?
 So lets try to provide the minimal guide to get started that out of the
 box has you in a position to satisfy all those requirements.
 
+## Getting started
+
 We're going to make some selections for you, but for now we'll assume you
 are starting out with nothing but git(1) and a Fortran compiler and a CLI
 (Command Line Interface, typically a terminal emulator running a shell).
 
-## Getting started
-
-We will assume you are using a CLI (Command Line Interface, basically
-a terminal emulator running a shell) and have the git(1) command and a
-Fortran compiler available.
+### create a new github repository from this template
 
 You will need a [github.com account](https://github.com). That is pretty easy.
 Go to the github site and create an account.
 
-Now, in your site click on "repository" and then click on "new" and create a
-repository for your project. Lets call it "project1". Just keep to the basics
-and except for perhaps selecting a license file just stick to the basics unless
-you have done this before.
+Now go to this site and click on "use this template" and create a new
+repository on your github site.
 
-Now, go to the directory where you want to create your Fortran project and
-run
-```bash
-    git clone https://urbanjost.github.io/easy 
-```
-Rename the directory "easy" to your project name. It is best to keep it a lowercase
-name that can also be a Fortran variable name. That is, use a-z, 0-9, and underscores
-(or dashes if you must) and start it with a letter. We will assume you changed the
-directory name to "project1".
-```bash
-   mv easy project1
-```
-Remove the ".git" subdirectory in project1/. 
-```bash
-   rm -r project1/.git
-```
-Initialize the directory by entering 
-```bash
-   fpm new project1 --backfill
-```
-Enter the directory and edit the file "fpm.toml" and change the metadata at the top
-to reflect your name and project. 
+When you pick the name at the prompt it is best to keep it a lowercase
+name that can also be a Fortran variable name. That is, use a-z, 0-9,
+and underscores (or dashes if you must) and start it with a letter. We
+will assume you changed the directory name to "project1", and that your
+github repository name is "johndoe".
 
-push repository from the command line. Assuming $USER is your github name
+Except for perhaps selecting a new license file just stick to the
+basics at this juncture unless you have done this before.
 
-git remote add origin https://github.com/$USER/project1.git
-git branch -M main
-git push -u origin main
+Now, in your CLI go to the directory where you want to create your
+Fortran project and run
+```bash
+    git clone https://github.com/johndoe/project1.git 
 ```
+Enter the directory and edit the file "fpm.toml" and change the metadata
+at the top to reflect your name and project. The critical line to change
+is the 'name="easy"' line; where you should change "easy" to your chosen
+project name (ie. "project1" in this example).
+
+Even without a compiler or `fpm` available you can now start changing the
+sample code, and then push the changes back to the repository where they
+will be compiled with several compilers and be tested with the "fpm test"
+command. In addition, developer documentation will be generated using
+`ford`. All that will happen automatically. Lets assume you change the
+file in app/main.f90. Then you enter the following from within your 
+project directory:
+
+```bash
+   git add app/main.f90
+   commit -m 'test using my repository'
+   git push
+```
+If you go to your repository site you will see the results of the tests
+in the CHANGELOG.md file.
 
 ## BUILDING with FPM
 
+Well, that shows a lot of things are in place already, but you do not
+want to have to push every change to your web site, so you need to
+just do that when you are ready with a new version. Back at the CLI
+you would just enter
 ```bash
-     git clone https://github.com/urbanjost/easy.git
-     cd easy
      fpm test
 ```
-or just list it as a dependency in your fpm.toml project file.
+If `gfortran` is not your default compiler you want to set the environment
+variable FPM_COMPILER. In bash(1) shells you might enter something like
+```bash
+export FPM_COMPILER=ifort
+```
+so you will not to keep adding "--compiler ifort" to all the `fpm` commands
+that need to know which compiler to use (run, test, build, install, ...).
 
+So assuming your github repository is public others can now use your
+code as an `fpm` dependency by using it in their fpm.toml file using
+something like
 ```toml
      [dependencies]
-     M_time        = { git = "https://github.com/urbanjost/M_time.git" }
+     M_time        = { git = "https://github.com/$YOUR_REPRO/project1.git" }
+```
+and at your discretion others can now collaborate with you on its
+development via the WWW (or an internal github server in a very
+similiar manner). Developer documentation if being built via `ford`
+in the repository directory docs/fpm-ford, and your tests are being
+run on Ubuntu, MSWindows, and MacOS systems with gfortran, and ifort on
+Ubuntu automatically.
+
+Hopefully, this is starting to feel like progress.
+
 ```
 
 ## DEVELOPER DOCUMENTATION

@@ -2,7 +2,7 @@
 
 The intent of this changelog is to keep everyone in the loop about
 what's new in the $MY_PROJECT_NAME  project. It is a curated, chronologically ordered
-list of notable changes including`records of change such as bug fixes,
+list of notable changes including records of change such as bug fixes,
 new features, changes, and relevant notifications.
 
 + [![Build FORD(1) docs](https://github.com/urbanjost/easy/actions/workflows/deploy_api_docs.yml/badge.svg)](https://github.com/urbanjost/easy/actions/workflows/deploy_api_docs.yml)

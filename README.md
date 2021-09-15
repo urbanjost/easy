@@ -100,8 +100,17 @@ file in app/main.f90. Then you enter the following from within your
 project directory:
 
 ```bash
+   # show the files you have changed
+   git status
+
+   # add the changed files to the list of files to commit to your new version
+   git add fpm.toml
    git add app/main.f90
+
+   # create your new version
    git commit -m 'test using my repository'
+
+   # push the changes back to your github repository
    git push
 ```
 If you go to your repository site you will see the results of the tests

@@ -104,8 +104,9 @@ project directory:
    git status
 
    # add the changed files to the list of files to commit to your new version
-   git add fpm.toml
-   git add app/main.f90
+   git commit --all      # adds all the files you changed
+   # optionally you can list the files by name with add command(s)
+   git add fpm.toml app/main.f90
 
    # create your new version
    git commit -m 'test using my repository'

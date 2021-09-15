@@ -101,7 +101,7 @@ project directory:
 
 ```bash
    git add app/main.f90
-   commit -m 'test using my repository'
+   git commit -m 'test using my repository'
    git push
 ```
 If you go to your repository site you will see the results of the tests

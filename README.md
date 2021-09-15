@@ -81,6 +81,9 @@ github repository name is "johndoe".
 Except for perhaps selecting a new license file just stick to the
 basics at this juncture unless you have done this before.
 
+But on your new site, goto "settings" and under "Github Pages"  select
+the "main" branch, and the "doc" directory and click on "save".
+
 Now, in your CLI go to the directory where you want to create your
 Fortran project and run
 ```bash

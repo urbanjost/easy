@@ -75,8 +75,9 @@ Package Manager).
 **You will need a [github.com account](https://github.com)**. That is pretty easy.
 Go to the github site and create an account.
 
-Now go to this site and click on **"use this template"** and create a new
-repository on your github site.
+Now go to [this site](https://github.com/urbanjost/easy)(https://github.com/urbanjost/easy)
+and click on **"use this template"** and create a new repository on your
+github site.
 
 When you pick the name at the prompt it is best to keep it a lowercase
 name that can also be a Fortran variable name. That is, use a-z, 0-9,

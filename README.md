@@ -105,6 +105,9 @@ the metadata at the top to reflect your name and project. The critical
 line to change is the **'name="easy"'** line; where you should change "easy"
 to your chosen project name (ie. "project1" in this example).
 
+Now edit the **CHANGELOG.md** file and replace **"urbanjost"** with your github
+repository name and **"easy"** with your project name.
+
 Even without a compiler or `fpm` available you can now start changing the
 sample code, and then optionally push the changes back to the repository where they
 will be compiled with several compilers and be tested with the "fpm test"
@@ -123,7 +126,7 @@ directory:
    # add the changed files to the list of files to commit to your new version
    git commit --all      # adds all the files you changed
    # optionally you can list the files by name with add command(s)
-   git add fpm.toml app/main.f90
+   git add fpm.toml app/main.f90 CHANGELOG.md
 
    # create your new version
    git commit -m 'test using my repository'

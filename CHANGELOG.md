@@ -1,7 +1,7 @@
 ## GPF Changelog
 
 The intent of this changelog is to keep everyone in the loop about
-what's new in the $MY_PROJECT_NAME  project. It is a curated, chronologically ordered
+what's new in the **easy**  project. It is a curated, chronologically ordered
 list of notable changes including records of change such as bug fixes,
 new features, changes, and relevant notifications.
 
@@ -14,22 +14,24 @@ new features, changes, and relevant notifications.
 + [![run fpm test on windows with msys gfortran](https://github.com/urbanjost/easy/actions/workflows/test_gfortran_msys_windows.yml/badge.svg)](https://github.com/urbanjost/easy/actions/workflows/test_gfortran_msys_windows.yml)
 
 ---
-**2015-12-21**  John S. Urban  <https://github.com/urbanjost>
+**2015-12-21**  John  Doe  <https://github.com/urbanjost/easy>
 
 ### :green_circle: ADD:
      initial release
 ---
 
 <!--
-   - [x] manpage
-   - [x] demo program
-   - [ ] unit test
-### :orange_circle: DIFF:
-       + renamed ADVICE(3f) to ALERT(3f)
+---
+EXAMPLE:
+**YYYY-MM-DD**  FIRSTNAME LASTNAME  <https://github.com/YOUR_REPOSITORY_NAME
+
 ### :green_circle: ADD:
-       + advice(3f) was added to provide a standardized message format simply.
+       + A new function was added that does this 
+         great stuff
+### :orange_circle: DIFF:
+       + You might not like this but we changed how things work
 ### :red_circle: FIX:
-       + </bo> did not work on several terminal types, changed it to a more
-         universally accepted value.
+       + did not work on several platforms, but now it works
+         like it was intended to.  
 -->
 

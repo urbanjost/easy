@@ -429,26 +429,26 @@ CC BY   Karl Broman
    Automating your page deployment  https://github.com/JamesIves/github-pages-deploy-action
 
 ## FORTRAN REFERENCES 
-+
-+ [fpm manifest file](https://github.com/fortran-lang/fpm/blob/master/manifest-reference.md) or your fpm.toml file
-+ [fpm(Fortran Package Manager)](https://github.com/fortran-lang/fpm)
-- git resources
-- github resources
-+ [github.com](https://github.com)
-+ [github actions](https://docs.github.com/en/actions)
-+ [github markdown]
-- Fortran reference materials
-+ [Fortran 2018 Standard](https://j3-fortran.org/doc/year/18/18-007r1.pdf)
-+ [GNU gfortran intrinsic descriptions](https://gcc.gnu.org/onlinedocs/gfortran/Intrinsic-Procedures.html)
-+ [J3](https://j3-fortran.org)
-- compiler information
-+ [GNU gcc](http://gcc.gnu.org)
-- automatic documentation tools
-+ [ford](https://politicalphysicist.github.io/ford-fortran-documentation.html)
-+ [doxygen](https://www.doxygen.nl/index.html)
-- Fortran resources
-+ [Fortran Wiki](http://fortranwiki.org) contains information on many Fortran resources
-+ [Fortran Discourse](https://fortran-lang.discourse.group)
-+ [Google Fortran newsgroup](https://groups.google.com/forum/#!forum/comp.lang.fortran)
-+ [Fortran-lang](https://fortran-lang.org)
-+ [Fortran Standard Library project](https://github.com/fortran-lang/stdlib)
+- **fpm resources**
+   + [fpm(Fortran Package Manager)](https://github.com/fortran-lang/fpm)
+   + [fpm manifest file](https://github.com/fortran-lang/fpm/blob/master/manifest-reference.md) or your fpm.toml file
+- **git resources**
+- **github resources**
+   + [github.com](https://github.com)
+   + [github actions](https://docs.github.com/en/actions)
+   + [github markdown]
+- **Fortran reference materials**
+   + [Fortran 2018 Standard](https://j3-fortran.org/doc/year/18/18-007r1.pdf)
+   + [GNU gfortran intrinsic descriptions](https://gcc.gnu.org/onlinedocs/gfortran/Intrinsic-Procedures.html)
+   + [J3](https://j3-fortran.org)
+- **compiler information**
+   + [GNU gcc](http://gcc.gnu.org)
+- **automatic documentation tools
+   + [ford](https://politicalphysicist.github.io/ford-fortran-documentation.html)
+   + [doxygen](https://www.doxygen.nl/index.html)
+- **Fortran resources**
+   + [Fortran Wiki](http://fortranwiki.org) contains information on many Fortran resources
+   + [Fortran Discourse](https://fortran-lang.discourse.group)
+   + [Google Fortran newsgroup](https://groups.google.com/forum/#!forum/comp.lang.fortran)
+   + [Fortran-lang](https://fortran-lang.org)
+   + [Fortran Standard Library project](https://github.com/fortran-lang/stdlib)

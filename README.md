@@ -72,41 +72,49 @@ Package Manager).
 
 ### create a new github repository from this template
 
-You will need a [github.com account](https://github.com). That is pretty easy.
+**You will need a [github.com account](https://github.com)**. That is pretty easy.
 Go to the github site and create an account.
 
-Now go to this site and click on "use this template" and create a new
+Now go to this site and click on **"use this template"** and create a new
 repository on your github site.
 
 When you pick the name at the prompt it is best to keep it a lowercase
 name that can also be a Fortran variable name. That is, use a-z, 0-9,
-and underscores (or dashes if you must) and start it with a letter. We
+and underscores (or dashes if you must) and start it with a letter. **We
 will assume you changed the directory name to "project1", and that your
-github repository name is "johndoe".
+github repository name is "johndoe"**. **Use the actual names you selected
+in the following examples**.
 
 Except for perhaps selecting a new license file just stick to the
 basics at this juncture unless you have done this before.
 
-But on your new site, goto "settings" and under "Github Pages"  select
-the "main" branch, and the "doc" directory and click on "save".
+But on your new site, goto **"settings"** and under **"Github Pages"** select
+the **"main"** branch, and the **"doc"** directory and click on **"save"**.
+
+You are done with the initial setup. You have already completed more of the
+stated goals than you imagine. Lets move off the web site and pack to your
+platform.
 
 Now, in your CLI go to the directory where you want to create your
-Fortran projects and make a directory called "github" and enter it to run
+Fortran projects and make a directory called **"github"** and enter it to run
 ```bash
     git clone https://github.com/johndoe/project1.git 
 ```
-Enter the "project1" directory and edit the file "fpm.toml" and change
+Enter the **"project1"** directory and edit the file **"fpm.toml"** and change
 the metadata at the top to reflect your name and project. The critical
-line to change is the 'name="easy"' line; where you should change "easy"
+line to change is the **'name="easy"'** line; where you should change "easy"
 to your chosen project name (ie. "project1" in this example).
 
 Even without a compiler or `fpm` available you can now start changing the
-sample code, and then push the changes back to the repository where they
+sample code, and then optionally push the changes back to the repository where they
 will be compiled with several compilers and be tested with the "fpm test"
-command. In addition, developer documentation will be generated using
-`ford`. All that will happen automatically. Lets assume you change the
-file in app/main.f90. Then you enter the following from within your 
-project directory:
+command automatically. In addition, developer documentation will be generated using
+`ford`. 
+
+Lets give that a go before we move on in the CLI.  Lets assume you change
+the file in app/main.f90. Adding a **"print *, 'my first change'**
+is sufficient.  Then you enter the following from within your project
+directory:
 
 ```bash
    # show the files you have changed
@@ -123,8 +131,10 @@ project directory:
    # push the changes back to your github repository
    git push
 ```
-If you go to your repository site you will see the results of the tests
-in the CHANGELOG.md file.
+If you go to your github repository site you will see the results of
+the tests in the CHANGELOG.md file. You can also use the **"Actions"**
+button at the top. Hopefully, everything was compiled on several platforms
+and the "fpm test" command was run on each platform.
 
 ## BUILDING with FPM
 
@@ -135,13 +145,16 @@ you would just enter
 ```bash
      fpm test
 ```
-If `gfortran` is not your default compiler you want to set the environment
-variable FPM_COMPILER. In bash(1) shells you might enter something like
+But __first__, if `gfortran` is not your default compiler you want to
+set the environment variable FPM_COMPILER. In bash(1) shells you might
+enter something like
 ```bash
 export FPM_COMPILER=ifort
 ```
-so you will not to keep adding "--compiler ifort" to all the `fpm` commands
-that need to know which compiler to use (run, test, build, install, ...).
+Now you will not have to keep adding "--compiler ifort" to all the `fpm`
+commands that need to know which compiler to use (run, test, build,
+install, ...). The value you have to set is probably just your compiler
+name.
 
 So assuming your github repository is public others can now use your
 code as an `fpm` dependency by using it in their fpm.toml file using

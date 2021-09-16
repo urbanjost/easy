@@ -4,13 +4,13 @@ src_dir: src
          example
          test
 output_dir: docs/fpm-ford
-project: $PUT_YOUR_PROJECT_NAME_HERE
-summary: $PUT_YOUR_PROJECT_DESCRIPTION_HERE
-project_github: https://github.com/$PUT_YOUR_REPOSITORY_NAME_HERE/$PUT__YOUR_PROJECT_NAME_HERE
+project: easy
+summary: easy project
+project_github: https://github.com/johndoe/easy
 project_download:
-author: $PUT_YOUR_FULL_NAME_HERE
-author_email: $PUT_YOUR_EMAIL_HERE
-github: https://github.com/$PUT_YOUR_REPOSITORY_NAME_HERE/$PUT__YOUR_PROJECT_NAME_HERE
+author: John Doe
+author_email: johndoe@gmail.com
+github: https://github.com/johndoe/easy
 media_dir: docs/images
 exclude_dir: archive
              FODDER

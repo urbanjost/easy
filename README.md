@@ -7,7 +7,6 @@
 #### [CHANGELOG](CHANGELOG.md) and BUILD ACTION STATUS
 ---
 
-
 ## NAME
    easy -  an example github fpm repository
 
@@ -47,7 +46,7 @@ not spending precious time reinventing the wheel.
 
 It can be hard to get started on the right foot.
 
-You've maybe heard of github and gitlab and git(1) and hg(1), rumblings
+You've maybe heard of github and gitlab and git(1), svn(1) and hg(1), rumblings
 about Jenkins and github actions and TOML and YAML configuration files and
 markdown, LaTex, and HTML. fpm(1) and Cmake and make(1) and doxygen(1)
 and ford(1) have probably come up too. And this all has to work with
@@ -63,6 +62,13 @@ box has you in a position to satisfy all those requirements.
 We're going to make some selections for you, but for now we'll assume you
 are starting out with nothing but git(1) and a Fortran compiler and a CLI
 (Command Line Interface, typically a terminal emulator running a shell).
+
+We are also assuming your project is standard Fortran and does not
+depend upon external libraries yet, although how to add external system
+libraries and other fpm packages via your fpm.toml file is described in
+the description of the manifest file on the fpm(1) site (one of those
+decisions for you is going to be to use github and fpm, the Fortran
+Package Manager).
 
 ### create a new github repository from this template
 
@@ -85,14 +91,14 @@ But on your new site, goto "settings" and under "Github Pages"  select
 the "main" branch, and the "doc" directory and click on "save".
 
 Now, in your CLI go to the directory where you want to create your
-Fortran project and run
+Fortran projects and make a directory called "github" and enter it to run
 ```bash
     git clone https://github.com/johndoe/project1.git 
 ```
-Enter the directory and edit the file "fpm.toml" and change the metadata
-at the top to reflect your name and project. The critical line to change
-is the 'name="easy"' line; where you should change "easy" to your chosen
-project name (ie. "project1" in this example).
+Enter the "project1" directory and edit the file "fpm.toml" and change
+the metadata at the top to reflect your name and project. The critical
+line to change is the 'name="easy"' line; where you should change "easy"
+to your chosen project name (ie. "project1" in this example).
 
 Even without a compiler or `fpm` available you can now start changing the
 sample code, and then push the changes back to the repository where they
@@ -152,8 +158,6 @@ run on Ubuntu, MSWindows, and MacOS systems with gfortran, and ifort on
 Ubuntu automatically.
 
 Hopefully, this is starting to feel like progress.
-
-```
 
 ## DEVELOPER DOCUMENTATION
 
@@ -406,17 +410,32 @@ But I use git@github.com:username/new_repo rather than https://github.com/userna
 Next: Contribute to someone’s repository
 
 CC BY   Karl Broman
-
-REFERENCES
-
-Fortran references
-   compiler manuals
-   Fortran wiki, discourse, and newsgroup
-git
    markdown
    github pages and using HTML and HTML in markdown
-fpm
-ford
-github actions
    Automating your call to fpm test
    Automating your page deployment  https://github.com/JamesIves/github-pages-deploy-action
+
+## FORTRAN REFERENCES 
++
++ [fpm manifest file](https://github.com/fortran-lang/fpm/blob/master/manifest-reference.md) or your fpm.toml file
++ [fpm(Fortran Package Manager)](https://github.com/fortran-lang/fpm)
+- git resources
+- github resources
++ [github.com](https://github.com)
++ [github actions](https://docs.github.com/en/actions)
++ [github markdown]
+- Fortran reference materials
++ [Fortran 2018 Standard](https://j3-fortran.org/doc/year/18/18-007r1.pdf)
++ [GNU gfortran intrinsic descriptions](https://gcc.gnu.org/onlinedocs/gfortran/Intrinsic-Procedures.html)
++ [J3](https://j3-fortran.org)
+- compiler information
++ [GNU gcc](http://gcc.gnu.org)
+- automatic documentation tools
++ [ford](https://politicalphysicist.github.io/ford-fortran-documentation.html)
++ [doxygen](https://www.doxygen.nl/index.html)
+- Fortran resources
++ [Fortran Wiki](http://fortranwiki.org) contains information on many Fortran resources
++ [Fortran Discourse](https://fortran-lang.discourse.group)
++ [Google Fortran newsgroup](https://groups.google.com/forum/#!forum/comp.lang.fortran)
++ [Fortran-lang](https://fortran-lang.org)
++ [Fortran Standard Library project](https://github.com/fortran-lang/stdlib)

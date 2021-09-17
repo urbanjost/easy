@@ -35,10 +35,16 @@ jobs:
           mingw-w64-${{ matrix.arch }}-gcc
           mingw-w64-${{ matrix.arch }}-gcc-fortran
 
+#    - name: Install fpm
+#      run: |
+#        wget https://github.com/awvwgk/mingw-w64-fpm-pkgbuild/releases/download/current/mingw-w64-x86_64-fpm-0.2.0-1-any.pkg.tar.zst
+#        pacman -U --noconfirm mingw-w64-x86_64-fpm-*-any.pkg.tar.zst
     - name: Install fpm
-      run: |
-        wget https://github.com/awvwgk/mingw-w64-fpm-pkgbuild/releases/download/current/mingw-w64-x86_64-fpm-0.2.0-1-any.pkg.tar.zst
-        pacman -U --noconfirm mingw-w64-x86_64-fpm-*-any.pkg.tar.zst
+      run: wget https://github.com/urbanjost/easy/blob/main/bootstrap/fpm.F90 -U --noconfirm 
+           echo $PATH 
+           echo %PATH%
+           gfortran fpm.F90 -o fpm
+	   ls /usr/bin /bin
 
     - run: |
         gfortran --version

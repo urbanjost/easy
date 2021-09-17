@@ -5,7 +5,8 @@ test" to run its unit tests on Ubunto(gfortran,ifort), MacOS(gfortran),
 and MSWindows(gfortran) using github actions.
 
 The results are able to be viewed using the **Actions** button at the
-top of the github page for the repository, or can be linked to in:
+top of the github page for the repository, or can be linked to in site
+documents:
 
 <!--
 NOTE:

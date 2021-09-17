@@ -1,9 +1,17 @@
-## GPF Changelog
+## STATUS
 
-The intent of this changelog is to keep everyone in the loop about
-what's new in the **easy**  project. It is a curated, chronologically ordered
-list of notable changes including records of change such as bug fixes,
-new features, changes, and relevant notifications.
+On each push or pull request this repository automatically runs "fpm
+test" to run its unit tests on Ubunto(gfortran,ifort), MacOS(gfortran),
+and MSWindows(gfortran) using github actions.
+
+The results are able to be viewed using the **Actions** button at the
+top of the github page for the repository, or can be linked to in:
+
+<!--
+NOTE:
+Change "urbanjost" to your github site name, and "easy" to your repository
+name in order to have this point to your site
+-->
 
 + [![Build FORD(1) docs](https://github.com/urbanjost/easy/actions/workflows/deploy_api_docs.yml/badge.svg)](https://github.com/urbanjost/easy/actions/workflows/deploy_api_docs.yml)
 + [![run fpm test on ubuntu with intel](https://github.com/urbanjost/easy/actions/workflows/test_intel_ubuntu.yml/badge.svg)](https://github.com/urbanjost/easy/actions/workflows/test_intel_ubuntu.yml)
@@ -12,26 +20,3 @@ new features, changes, and relevant notifications.
 + [![run fpm test on windows with gfortran](https://github.com/urbanjost/easy/actions/workflows/test_gfortran_windows.yml/badge.svg)](https://github.com/urbanjost/easy/actions/workflows/test_gfortran_windows.yml)
 + [![run fpm test on windows with mingw64 ](https://github.com/urbanjost/easy/actions/workflows/test_gfortran_mingw64_windows.yml/badge.svg)](https://github.com/urbanjost/easy/actions/workflows/test_gfortran_mingw64_windows.yml)
 + [![run fpm test on windows with msys gfortran](https://github.com/urbanjost/easy/actions/workflows/test_gfortran_msys_windows.yml/badge.svg)](https://github.com/urbanjost/easy/actions/workflows/test_gfortran_msys_windows.yml)
-
----
-**2015-12-21**  John  Doe  <https://github.com/urbanjost/easy>
-
-### :green_circle: ADD:
-     initial release
----
-
-<!--
----
-EXAMPLE:
-**YYYY-MM-DD**  FIRSTNAME LASTNAME  <https://github.com/YOUR_REPOSITORY_NAME
-
-### :green_circle: ADD:
-       + A new function was added that does this 
-         great stuff
-### :orange_circle: DIFF:
-       + You might not like this but we changed how things work
-### :red_circle: FIX:
-       + did not work on several platforms, but now it works
-         like it was intended to.  
--->
-

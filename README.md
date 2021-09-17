@@ -4,7 +4,7 @@
 #### CONCEPT UNDER DEVELOPMENT
 ##### CONCEPT UNDER DEVELOPMENT
 ![selfy](docs/images/selfy.gif)
-#### [CHANGELOG](CHANGELOG.md) and BUILD ACTION STATUS
+#### [CHANGELOG](docs/CHANGELOG.md) and BUILD ACTION [STATUS](docs/STATUS.md)
 ---
 
 ## NAME
@@ -89,11 +89,11 @@ in the following examples**.
 Except for perhaps selecting a new license file just stick to the
 basics at this juncture unless you have done this before.
 
-But on your new site, goto **"settings"** and under **"Github Pages"** select
+But on your new site, go to **"settings"** and under **"Github Pages"** select
 the **"main"** branch, and the **"doc"** directory and click on **"save"**.
 
 You are done with the initial setup. You have already completed more of the
-stated goals than you imagine. Lets move off the web site and pack to your
+stated goals than you imagine. Lets move off the web site and back to your
 platform.
 
 Now, in your CLI go to the directory where you want to create your

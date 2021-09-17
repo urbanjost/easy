@@ -49,4 +49,4 @@ jobs:
          TZ: UTC+04:00
 
     - name: cleanup 
-      run: ls -ltras
+      run: dir

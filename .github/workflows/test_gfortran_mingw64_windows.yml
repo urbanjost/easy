@@ -41,9 +41,9 @@ jobs:
 #        pacman -U --noconfirm mingw-w64-x86_64-fpm-*-any.pkg.tar.zst
     - name: Install fpm
       run: |
+           echo $PATH
            wget https://raw.githubusercontent.com/urbanjost/easy/main/bootstrap/fpm.F90
            gfortran fpm.F90 -o /usr/local/bin/fpm
-           echo $PATH
 
     - run: |
         gfortran --version

@@ -10,11 +10,6 @@ jobs:
     name: Deploy docs
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/upload-artifact
-        with:
-            name: my-artifact
-              path: ./my_path
-                  retention-days: 1
       - name: Set up Python
         uses: actions/setup-python@v2
         with:

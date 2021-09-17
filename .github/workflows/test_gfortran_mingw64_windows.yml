@@ -43,7 +43,8 @@ jobs:
       run: |
            echo $PATH
            wget https://raw.githubusercontent.com/urbanjost/easy/main/bootstrap/fpm.F90
-           gfortran fpm.F90 -o /usr/local/bin/fpm
+           gfortran fpm.F90 -o fpm
+#           gfortran fpm.F90 -o /usr/local/bin/fpm
 
     - run: |
         gfortran --version

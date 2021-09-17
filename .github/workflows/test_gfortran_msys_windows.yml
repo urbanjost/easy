@@ -47,3 +47,6 @@ jobs:
       env:
          FC: gfortran
          TZ: UTC+04:00
+
+    - name: cleanup 
+      run: ls -ltras

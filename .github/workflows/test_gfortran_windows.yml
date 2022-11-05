@@ -31,11 +31,11 @@ jobs:
            Set-PSDebug -Trace 1
            $Env:Path += [IO.Path]::PathSeparator + $pwd
            curl https://raw.githubusercontent.com/urbanjost/index/main/bootstrap/fpm.F90 --output fpm.F90
-           gfortran hello.f90 -g -fbacktrace -o hello.exe
-           ls hello.exe
-           curl https://raw.githubusercontent.com/urbanjost/index/main/bootstrap/hello.f90 --output hello.f90
            gfortran -D_WIN32 fpm.F90 -g -fbacktrace -o fpm.exe
            ls fpm.exe
+           curl https://raw.githubusercontent.com/urbanjost/index/main/bootstrap/hello.f90 --output hello.f90
+           gfortran hello.f90 -g -fbacktrace -o hello.exe
+           ls hello.exe
     - name: Display environment
       run: |
         Set-PSDebug -Trace 1

@@ -21,7 +21,7 @@
            pkg_add curl
 
          run: |
-
+           set -x -v
            pwd
            ls -lah
            whoami

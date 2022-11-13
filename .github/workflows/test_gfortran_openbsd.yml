@@ -20,6 +20,7 @@
          mem: 4096
          prepare: |
            pkg_add curl
+           pkg_add bash
 
          run: |
            set -x -v

@@ -19,8 +19,8 @@
          usesh: true
          mem: 4096
          prepare: |
-           pkg_add bash
            pkg_add curl
+           pkg_add bash
 
          run: |
            set -x -v

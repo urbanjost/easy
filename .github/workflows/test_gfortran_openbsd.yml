@@ -17,6 +17,7 @@
        with:
          envs: 'MYTOKEN MYTOKEN2'
          usesh: true
+         mem: 4096
          prepare: |
            pkg_add curl
 

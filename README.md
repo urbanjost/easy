@@ -123,13 +123,17 @@ directory:
 ```bash
    # show the files you have changed
    git status
+   # show the changes in detail
+   git diff
 
    # add the changed files to the list of files to commit to your new version
    git commit --all      # adds all the files you changed
+
+   # ALTERNATIVELY, individually add the file(s) you changed
    # optionally you can list the files by name with add command(s)
    git add fpm.toml app/main.f90 CHANGELOG.md
-
-   # create your new version
+   # create your new version ( just "git commit" will take you into an editor
+   # where you can create a more complete description of your changes).
    git commit -m 'test using my repository'
 
    # push the changes back to your github repository

@@ -23,14 +23,18 @@ jobs:
           git
           wget
           mingw-w64-x86_64-gcc-fortran
+          mingw-w64-x86_64-meson
+          mingw-w64-x86_64-ninja
 
     - name: Install fpm
       shell: msys2 {0}
       run: |
+           echo $PATH
+           pwd
+           uname -a
            wget https://raw.githubusercontent.com/urbanjost/index/main/bootstrap/fpm.F90
-           mkdir tmp
-           gfortran fpm.F90 -Jtmp -Itmp -static -o fpm
-           rm -f tmp/*.mod
+	   mkdir tmp
+           gfortran fpm.F90 -Itmp -Jtmp -o fpm
 
     - name: Run tests and demo programs (debug)
       shell: msys2 {0}
@@ -49,6 +53,13 @@ jobs:
       env:
          FC: gfortran
          TZ: UTC+04:00
+
+    - name: Build with meson
+      shell: msys2 {0}
+      run: |
+        meson --version
+        meson setup build -Dbuildtype=debug
+        meson compile -C build
 
     - name: cleanup 
       run: dir

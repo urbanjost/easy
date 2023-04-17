@@ -1,4 +1,4 @@
-# TOML file for fpm as described at https://github.com/fortran-lang/fpm/blob/master/manifest-reference.md
+# TOML file for fpm as described at https://fpm.fortran-lang.org/en/spec/manifest.html
 #
 ###############################################################################
 # update replacing "easy" by the name of your project, which is best kept as a lowercase name that meets
@@ -128,7 +128,7 @@ homepage = "https://github.com/johndoe/easy.git"
 # M_CLI = { git = "https://github.com/urbanjost/M_CLI" }
 # M_CLI : Unix-style commandline parsing using a prototype command and NAMELIST (STD:f2008)
 
-# M_color : conversions between common color models 
+# M_color : conversions between common color models
 # M_color = { git = "https://github.com/urbanjost/M_color" }
 
 # mctc-gcp : Geometrical Counter-Poise correction
@@ -177,7 +177,7 @@ homepage = "https://github.com/johndoe/easy.git"
 # M_pixel = { git = "https://github.com/urbanjost/M_pixel" }
 
 # M_process = { git = "https://github.com/urbanjost/M_process" }
-# M_process : ISO_C_BINDING interface to popen(3c) and related system procedures 
+# M_process : ISO_C_BINDING interface to popen(3c) and related system procedures
 
 # M_readline : Fortran-callable interfae to the C input history editor readline(3c)
 # M_readline = { git = "https://github.com/urbanjost/M_readline" }
@@ -196,7 +196,7 @@ homepage = "https://github.com/johndoe/easy.git"
 # M_system = { git = "https://github.com/urbanjost/M_system" }
 # M_system : (mostly)POSIX system routine interface
 
-# M_time : date and time conversion, formatting and computation 
+# M_time : date and time conversion, formatting and computation
 # M_time = { git = "https://github.com/urbanjost/M_time" }
 
 # multicharge = { git = "https://github.com/grimme-lab/multicharge.git" }

@@ -70,6 +70,7 @@ do
    cp ./easy/.github/workflows/test_gfortran_msys_windows.yml  $NAME/test_gfortran_msys_windows.yml
    cp ./easy/.github/workflows/test_intel_ubuntu.yml $NAME/test_intel_ubuntu.yml
    cp ./easy/.github/workflows/deploy_api_docs.yml $NAME/deploy_api_docs.yml
+   cp ./easy/.github/workflows/docs.yml $NAME/docs.yml
    cp ./easy/.github/workflows/test_gfortran_mingw64_windows.yml $NAME/test_gfortran_mingw64_windows.yml
    cp ./easy/.github/workflows/test_gfortran_windows.yml $NAME/test_gfortran_windows.yml
    cp ./easy/.github/workflows/test_gfortran_ubuntu.yml $NAME/test_gfortran_ubuntu.yml

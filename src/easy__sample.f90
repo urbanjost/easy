@@ -1,4 +1,4 @@
-module M_sample
+module easy__sample
 implicit none
 private
 public :: mysqrt
@@ -21,4 +21,4 @@ real            :: answer
    answer=sin(r)
 end function mysin
 
-end module M_sample
+end module easy__sample

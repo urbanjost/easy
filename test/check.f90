@@ -1,5 +1,5 @@
 program check
-use M_sample, only : mysqrt, mysin
+use easy__sample, only : mysqrt, mysin
 implicit none
 real,parameter :: PI=atan(1.0)*4.0
 

@@ -7,10 +7,10 @@
 #### [CHANGELOG](docs/CHANGELOG.md) and BUILD ACTION [STATUS](docs/STATUS.md)
 ---
 
-## NAME
+## Name
    easy -  an example github fpm repository
 
-## TOPICS
+## Topics
 
   * using `easy` to start a new fpm(1) github repository
   * basic fpm usage
@@ -24,7 +24,7 @@
   * resources
   * references
 
-## DESCRIPTION
+## Description
 
 You might be starting off small, but you think your next Fortran project
 could really grow into something big.
@@ -144,7 +144,7 @@ the tests in the CHANGELOG.md file. You can also use the **"Actions"**
 button at the top. Hopefully, everything was compiled on several platforms
 and the "fpm test" command was run on each platform.
 
-## BUILDING with FPM
+## Building with fpm(1)
 
 Well, that shows a lot of things are in place already, but you do not
 want to have to push every change to your web site, so you need to
@@ -180,13 +180,13 @@ Ubuntu automatically.
 
 Hopefully, this is starting to feel like progress.
 
-## DEVELOPER DOCUMENTATION
+## Developer Documentation
 
 ### ford
 
 - [ford(1) output](https://urbanjost.github.io/easy/fpm-ford/index.html).
 
-## SEE ALSO
+## See Also
 
  * [Fortran Package Manager](https://github.com/fortran-lang/fpm) )
 
@@ -436,7 +436,7 @@ CC BY   Karl Broman
    Automating your call to fpm test
    Automating your page deployment  https://github.com/JamesIves/github-pages-deploy-action
 
-## FORTRAN REFERENCES 
+## Fortran References 
 - **fpm resources**
    + [fpm(Fortran Package Manager)](https://github.com/fortran-lang/fpm)
    + [fpm manifest file](https://github.com/fortran-lang/fpm/blob/master/manifest-reference.md) or your fpm.toml file

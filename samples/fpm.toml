@@ -36,7 +36,7 @@ homepage = "https://github.com/johndoe/easy.git"
 #source-dir="test/"
 #main="test_suite_easy.f90"
 #[test.dependencies]
-#M_msg          = { git = "https://github.com/urbanjost/M_msg.git" }
+#M_framework          = { git = "https://github.com/urbanjost/M_framework.git" }
 
 [dependencies]
 ###############################################################################
@@ -164,8 +164,8 @@ homepage = "https://github.com/johndoe/easy.git"
 # M_match : Basic Regular Expressions
 # M_match = { git = "https://github.com/urbanjost/M_match" }
 
-# M_msg : converts any standard scalar type to a string and support unit testing
-# M_msg = { git = "https://github.com/urbanjost/M_msg" }
+# M_framework : converts any standard scalar type to a string and support unit testing
+# M_framework = { git = "https://github.com/urbanjost/M_framework" }
 
 # M_ncurses : Fortran-callable interfae to the C library ncurses(3c)
 # M_ncurses = { git = "https://github.com/urbanjost/M_ncurses" }

@@ -1,8 +1,6 @@
 # CONCEPT UNDER DEVELOPMENT
 ## CONCEPT UNDER DEVELOPMENT
 ### CONCEPT UNDER DEVELOPMENT
-#### CONCEPT UNDER DEVELOPMENT
-##### CONCEPT UNDER DEVELOPMENT
 ![selfy](docs/images/selfy.gif)
 #### [CHANGELOG](docs/CHANGELOG.md) and BUILD ACTION [STATUS](docs/STATUS.md)
 ---
@@ -20,6 +18,7 @@
   * Adding plug-ins
      + fpm-man
      + fpm-search
+  * github topics
   * registering your project in the fpm(1) registry
   * resources
   * references
@@ -435,6 +434,19 @@ CC BY   Karl Broman
    github pages and using HTML and HTML in markdown
    Automating your call to fpm test
    Automating your page deployment  https://github.com/JamesIves/github-pages-deploy-action
+
+## github topics
+
+Any project complete enough should generate a github **Release** and add the topic "fortran-package-manager"
+to their github repository. 
+
+Putting out a release lets users know you have reached a milestone where something is fully useable.
+It is very easy to overlook making a release, but a lot of consumers of github packages consider it a red flag
+if no release is present.
+
+Topic names that are well chosen make it much easier to find your project. In particular, fpm(1) projects want
+to include the topic [fortran-package-manager](https://github.com/topics/fortran-package-manager). Then, if
+you click on the topic you will see a burgeoning list of other fpm(1)-compatible packages.
 
 ## Fortran References 
 - **fpm resources**

@@ -31,16 +31,18 @@ could really grow into something big.
 Well, it can be hard enough just writing your Fortran code.
 
 But you have this nagging feeling you 
-+ should be using version control,
-+ that you will want collaborators to be able to work with you on the project, 
-+ that you should be generating developer documentation as well as user documention for the code,
-+ that you want to easily share your results,
-+ and everyone says you should be building in unit testing of your code as you develop it.
++ should be using version control
++ will want collaborators to be able to work with you on the project
++ should be generating developer documentation as well as user documention
+  for the code
++ want to easily share your results
++ and everyone says you should be building in unit testing of your code
+  as you develop it
 
-you want the test runs and builds and document
-generation to run automatically, of course. 
+You want the test runs and builds and document generation to run
+automatically, of course.
 
-And then there are all those **compilers switches** , and your code will
+And then there are all those **compilers switches**, and your code will
 likely require a **build tool** as it grows in complexity, and you would
 like to easily **incorporate existing code** into yours so you are not
 spending precious time reinventing the wheel.
@@ -82,12 +84,12 @@ Now go to [this site](https://github.com/urbanjost/easy)(https://github.com/urba
 and click on **"use this template"** and create a new repository on your
 github site.
 
-When you pick the new name for your repository at the prompt it is best to keep it a lowercase
-name that can also be a Fortran variable name. That is, use a-z, 0-9,
-and underscores (or dashes if you must) and start it with a letter. **We
-will assume you changed the directory name to "project1", and that your
-github repository name is "johndoe"**. **Use the actual names you selected
-in the following examples**.
+When you pick the new name for your repository at the prompt it is best to
+keep it a lowercase name that can also be a Fortran variable name. That
+is, use a-z, 0-9, and underscores (or dashes if you must) and start
+it with a letter. **We will assume you changed the directory name to
+"project1", and that your github repository name is "johndoe"**. **Use
+the actual names you selected in the following examples**.
 
 Except for perhaps selecting a new license file just stick to the
 basics at this juncture unless you have done this before.
@@ -114,7 +116,7 @@ with your github repository name and your project name and so on. The
 strings to change are YOUR_PROJECT_NAME, YOUR_FIRSTNAME, YOUR_LASTNAME,
 YOUR_SITE_NAME, YOUR_REPOSITORY_NAME.
 
-Do the same with the **STATUS.md** as well.
+Do the same with the **STATUS.md** file as well.
 
 Even without a compiler or `fpm` available you can now start changing the
 sample code, and then optionally push the changes back to the repository where they

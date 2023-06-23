@@ -18,4 +18,4 @@ and MSWindows(gfortran) using github actions.
 
 The results are able to be viewed using the **Actions** button at the
 top of the github page for the repository, or can be linked to in site
-documents:
+documents as demonstrated by the links above.

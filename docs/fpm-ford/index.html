@@ -1,0 +1,456 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="easy project">
+    <meta name="author" content="John Doe" >
+    <link rel="icon" href="./favicon.png">
+
+    <title> easy </title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- Font Awesome -->
+    <link href="./css/fontawesome.min.css" rel="stylesheet">
+    <link href="./css/brands.min.css" rel="stylesheet">
+    <link href="./css/regular.min.css" rel="stylesheet">
+    <link href="./css/solid.min.css" rel="stylesheet">
+    <link href="./css/v4-font-face.min.css" rel="stylesheet">
+    <link href="./css/v4-shims.min.css" rel="stylesheet">
+    <!-- MathJax -->
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        TeX: { equationNumbers: { autoNumber: "AMS" } }
+      });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async
+            integrity="sha256-DViIOMYdwlM/axqoGDPeUyf0urLoHMN4QACBKyB58Uw=" crossorigin="anonymous"></script>
+    <!-- Other scripts and stylesheets -->
+    <link href="./css/local.css" rel="stylesheet">
+    <link href="./css/pygments.css" rel="stylesheet">
+    <script src="./js/svg-pan-zoom.min.js"></script>
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <div class="container-fluid mb-sm-4 mb-xl-2">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="./index.html">easy </a>
+          <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar"
+                  aria-expanded="false" aria-controls="navbar" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon">
+          </button>
+
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="./lists/files.html">Source Files</a>
+                  </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./lists/modules.html">Modules</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./lists/procedures.html">Procedures</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./lists/programs.html">Programs</a>
+                </li>
+            </ul>
+              <div class="d-flex align-items-end flex-grow-1">
+                <form action="./search.html" role="search" class="ms-auto">
+                  <input type="text" class="form-control" aria-label="Search" placeholder="Search" name="q" id="tipue_search_input" autocomplete="off" required>
+                </form>
+              </div>
+          </div><!--/.nav-collapse -->
+        </div>
+      </nav>
+    </div>
+
+    <div class="container">
+  <!-- Main component for a primary marketing message or call to action -->
+    <div class="p-5 mb-4 bg-light border rounded-3" id="jumbotron">
+      <p>easy project</p>
+        <p> Find us on&hellip;</p>
+      <p>
+        <a class="btn btn-lg btn-primary" href="https://github.com/johndoe/easy" role="button">GitHub</a>
+        
+        
+        
+        
+      </p>
+    </div>
+
+      <div class="row" id='text'>
+        <div class=col-md-8>
+          <h1>easy</h1>
+          <h1 id="concept-under-development">CONCEPT UNDER DEVELOPMENT</h1>
+<h2 id="concept-under-development_1">CONCEPT UNDER DEVELOPMENT</h2>
+<h3 id="concept-under-development_2">CONCEPT UNDER DEVELOPMENT</h3>
+<p><img alt="selfy" src="docs/images/selfy.gif"></p>
+<h4 id="changelog-and-build-action-status"><a href="docs/CHANGELOG.md">CHANGELOG</a> and BUILD ACTION <a href="docs/STATUS.md">STATUS</a></h4>
+<hr>
+<h2 id="name">Name</h2>
+<p>easy -  an example github fpm repository</p>
+<h2 id="topics">Topics</h2>
+<ul>
+<li>using <code>easy</code> to start a new fpm(1) github repository</li>
+<li>basic fpm usage</li>
+<li>basic git usage</li>
+<li>github actions to verify repository changes</li>
+<li>using <strong>ford(1)</strong> for documentation</li>
+<li>Adding plug-ins<ul>
+<li>fpm-man</li>
+<li>fpm-search</li>
+</ul>
+</li>
+<li>github topics</li>
+<li>registering your project in the fpm(1) registry</li>
+<li>resources</li>
+<li>references</li>
+</ul>
+<h2 id="description">Description</h2>
+<p>You might be starting off small, but you think your next Fortran project
+could really grow into something big.</p>
+<p>Well, it can be hard enough just writing your Fortran code.</p>
+<p>But you have this nagging feeling you 
++ should be using version control
++ will want collaborators to be able to work with you on the project
++ should be generating developer documentation as well as user documention
+  for the code
++ want to easily share your results
++ and everyone says you should be building in unit testing of your code
+  as you develop it</p>
+<p>You want the test runs and builds and document generation to run
+automatically, of course.</p>
+<p>And then there are all those <strong>compilers switches</strong>, and your code will
+likely require a <strong>build tool</strong> as it grows in complexity, and you would
+like to easily <strong>incorporate existing code</strong> into yours so you are not
+spending precious time reinventing the wheel.</p>
+<p>It can be hard to get started on the right foot.</p>
+<p>You&rsquo;ve maybe heard of github and gitlab and git(1), svn(1) and hg(1), rumblings
+about Jenkins and github actions and TOML and YAML configuration files and
+markdown, LaTex, and HTML. fpm(1) and Cmake and make(1) and doxygen(1)
+and ford(1) have probably come up too. And this all has to work with
+the NAG and Intel and NVidia and GNU compilers just to start with; and
+maybe Cray/HPE and IBM sooner than later, and so on. </p>
+<p>Sheesh. You just
+want to write some Fortran code, right?</p>
+<p>So lets try to provide the minimal guide to get started that out of the
+box has you in a position to satisfy all those requirements.</p>
+<h2 id="getting-started">Getting started</h2>
+<p>We&rsquo;re going to make some selections for you, but for now we&rsquo;ll assume you
+are starting out with nothing but git(1) and a Fortran compiler and a CLI
+(Command Line Interface, typically a terminal emulator running a shell).</p>
+<p>We are also assuming your project is standard Fortran and does not
+depend upon external libraries yet, although how to add external system
+libraries and other fpm packages via your fpm.toml file is described in
+the manifest file guide on the fpm(1) site (one of those decisions we are
+making for you is going to be to use <strong>git</strong> and <strong>github</strong> and <strong>fpm</strong>,
+the Fortran Package Manager).</p>
+<h3 id="create-a-new-github-repository-from-this-template">create a new github repository from this template</h3>
+<p><strong>You will need a <a href="https://github.com">github.com account</a></strong>. That is pretty easy.
+Go to the github site and create an account.</p>
+<p>Now go to <a href="https://github.com/urbanjost/easy">this site</a>(https://github.com/urbanjost/easy)
+and click on <strong>&ldquo;use this template&rdquo;</strong> and create a new repository on your
+github site.</p>
+<p>When you pick the new name for your repository at the prompt it is best to
+keep it a lowercase name that can also be a Fortran variable name. That
+is, use a-z, 0-9, and underscores (or dashes if you must) and start
+it with a letter. <strong>We will assume you changed the directory name to
+&ldquo;project1&rdquo;, and that your github repository name is &ldquo;johndoe&rdquo;</strong>. <strong>Use
+the actual names you selected in the following examples</strong>.</p>
+<p>Except for perhaps selecting a new license file just stick to the
+basics at this juncture unless you have done this before.</p>
+<p>But on your new site, go to <strong>&ldquo;settings&rdquo;</strong> and under <strong>&ldquo;Github Pages&rdquo;</strong> select
+the <strong>&ldquo;main&rdquo;</strong> branch, and the <strong>&ldquo;doc&rdquo;</strong> directory and click on <strong>&ldquo;save&rdquo;</strong>.</p>
+<p>You are done with the initial setup. You have already completed more of the
+stated goals than you imagine. Lets move off the web site and back to your
+platform.</p>
+<p>Now, in your CLI go to the directory where you want to create your
+Fortran projects and make a directory called <strong>&ldquo;github&rdquo;</strong> and enter it to run</p>
+<div class="codehilite"><pre><span></span><code>    git clone https://github.com/johndoe/project1.git 
+</code></pre></div>
+
+<p>Enter the <strong>&ldquo;project1&rdquo;</strong> directory and edit the file <strong>&ldquo;fpm.toml&rdquo;</strong> and change
+the metadata at the top to reflect your name and project. The critical
+line to change is the <strong>&lsquo;name=&rdquo;easy&rdquo;&rsquo;</strong> line; where you should change &ldquo;easy&rdquo;
+to your chosen project name (ie. &ldquo;project1&rdquo; in this example).</p>
+<p>Now edit the <strong>CHANGELOG.md</strong> file and replace <strong>&ldquo;YOUR_*&rdquo;</strong> names
+with your github repository name and your project name and so on. The
+strings to change are YOUR_PROJECT_NAME, YOUR_FIRSTNAME, YOUR_LASTNAME,
+YOUR_SITE_NAME, YOUR_REPOSITORY_NAME.</p>
+<p>Do the same with the <strong>STATUS.md</strong> file as well.</p>
+<p>Even without a compiler or <code>fpm</code> available you can now start changing the
+sample code, and then optionally push the changes back to the repository where they
+will be compiled with several compilers and be tested with the &ldquo;fpm test&rdquo;
+command automatically. In addition, developer documentation will be generated using
+<code>ford</code>. </p>
+<p>Lets give that a go before we move on in the CLI.  Lets assume you change
+the file in app/main.f90. Adding a <strong>&ldquo;print *, &lsquo;my first change&rsquo;</strong>
+is sufficient.  Then you enter the following from within your project
+directory:</p>
+<div class="codehilite"><pre><span></span><code>   <span class="c1"># show the files you have changed</span>
+   git status
+   <span class="c1"># show the changes in detail</span>
+   git diff
+
+   <span class="c1"># add the changed files to the list of files to commit to your new version</span>
+   git commit --all      <span class="c1"># adds all the files you changed</span>
+
+   <span class="c1"># ALTERNATIVELY, individually add the file(s) you changed</span>
+   <span class="c1"># optionally you can list the files by name with add command(s)</span>
+   git add fpm.toml app/main.f90 CHANGELOG.md
+   <span class="c1"># create your new version ( just &quot;git commit&quot; will take you into an editor</span>
+   <span class="c1"># where you can create a more complete description of your changes).</span>
+   git commit -m <span class="s1">&#39;test using my repository&#39;</span>
+
+   <span class="c1"># push the changes back to your github repository</span>
+   git push
+</code></pre></div>
+
+<p>If you go to your github repository site you will see the results of
+the tests in the STATUS.md file. You can also use the <strong>&ldquo;Actions&rdquo;</strong>
+button at the top. Hopefully, everything was compiled on several platforms
+and the &ldquo;fpm test&rdquo; command was run on each platform.</p>
+<h2 id="building-with-fpm1">Building with fpm(1)</h2>
+<p>Well, that shows a lot of things are in place already, but you do not
+want to have to push every change to your web site, so you need to
+just do that when you are ready with a new version. Back at the CLI
+you would just enter</p>
+<div class="codehilite"><pre><span></span><code>     fpm <span class="nb">test</span>
+</code></pre></div>
+
+<p>But <strong>first</strong>, if <code>gfortran</code> is not your default compiler you want to
+set the environment variable FPM_COMPILER. In bash(1) shells you might
+enter something like</p>
+<div class="codehilite"><pre><span></span><code><span class="nb">export</span> <span class="nv">FPM_COMPILER</span><span class="o">=</span>ifort
+</code></pre></div>
+
+<p>Now you will not have to keep adding &ldquo;&ndash;compiler ifort&rdquo; to all the <code>fpm</code>
+commands that need to know which compiler to use (run, test, build,
+install, &hellip;). The value you have to set is probably just your compiler
+name.</p>
+<p>So assuming your github repository is public others can now use your
+code as an <code>fpm</code> dependency by using it in their fpm.toml file using
+something like</p>
+<div class="codehilite"><pre><span></span><code><span class="w">     </span><span class="k">[dependencies]</span><span class="w"></span>
+<span class="w">     </span><span class="n">M_time</span><span class="w">        </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">git</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;https://github.com/$YOUR_REPRO/project1.git&quot;</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+</code></pre></div>
+
+<p>and at your discretion others can now collaborate with you on its
+development via the WWW (or an internal github server in a very
+similiar manner). Developer documentation if being built via <code>ford</code>
+in the repository directory docs/fpm-ford, and your tests are being
+run on Ubuntu, MSWindows, and MacOS systems with gfortran, and ifort on
+Ubuntu automatically.</p>
+<p>Hopefully, this is starting to feel like progress.</p>
+<h2 id="developer-documentation">Developer Documentation</h2>
+<h3 id="ford">ford</h3>
+<ul>
+<li><a href="https://urbanjost.github.io/easy/fpm-ford/index.html">ford(1) output</a>.</li>
+</ul>
+<h2 id="see-also">See Also</h2>
+<ul>
+<li><a href="https://github.com/fortran-lang/fpm">Fortran Package Manager</a> )</li>
+</ul>
+<p>Discussion is welcome here as well as at
+ - <a href="https://fortran-lang.discourse.group">Fortran Discourse</a> is a resource for discussion
+   Fortran 
+ - <a href="https://groups.google.com/forum/#!forum/comp.lang.fortran">Google Fortran newsgroup</a> is
+   another popular Fortran forum
+ - The <a href="http://fortranwiki.org">Fortran Wiki</a> contains information on many Fortran resources
+ - Fortran compiler sites have Fortran reference manuals available
+ - <a href="https://github.com/fortran-lang/fpm">Fortran Package Manager</a> has a growing list of
+   resources including how to setup Fortran compilers, fpm(1)</p>
+<ol>
+<li>Fortran compilers</li>
+<li>Fortran references</li>
+<li>git</li>
+<li>
+<p>fpm</p>
+<p>Your first time: get github account; install git, set up ssh.
+Typical use: add, commit, push, status, and diff.
+Start a new repository: from scratch, or with an existing project.</p>
+</li>
+</ol>
+<p>Version control is the only reasonable way to keep track of changes in code, manuscripts, presentations, and data analysis projects.</p>
+<p>Your first time with git and github</p>
+<p>If you’ve never used git or github before, there are a bunch of things
+that you need to do. It’s very well explained on github, but repeated
+here for completeness.</p>
+<div class="codehilite"><pre><span></span><code><span class="n">Get</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">github</span><span class="w"> </span><span class="n">account</span><span class="o">.</span><span class="w"></span>
+<span class="n">Download</span><span class="w"> </span><span class="ow">and</span><span class="w"> </span><span class="n">install</span><span class="w"> </span><span class="n">git</span><span class="o">.</span><span class="w"></span>
+
+<span class="n">Set</span><span class="w"> </span><span class="n">up</span><span class="w"> </span><span class="n">git</span><span class="w"> </span><span class="n">with</span><span class="w"> </span><span class="n">your</span><span class="w"> </span><span class="n">user</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="ow">and</span><span class="w"> </span><span class="n">email</span><span class="o">.</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">Open</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">terminal</span><span class="o">/</span><span class="n">shell</span><span class="w"> </span><span class="ow">and</span><span class="w"> </span><span class="n">type</span><span class="p">:</span><span class="w"></span>
+
+<span class="w">    </span><span class="o">$</span><span class="w"> </span><span class="n">git</span><span class="w"> </span><span class="n">config</span><span class="w"> </span><span class="o">--</span><span class="n">global</span><span class="w"> </span><span class="n">user</span><span class="o">.</span><span class="n">name</span><span class="w"> </span><span class="s2">&quot;Your name here&quot;</span><span class="w"></span>
+<span class="w">    </span><span class="o">$</span><span class="w"> </span><span class="n">git</span><span class="w"> </span><span class="n">config</span><span class="w"> </span><span class="o">--</span><span class="n">global</span><span class="w"> </span><span class="n">user</span><span class="o">.</span><span class="n">email</span><span class="w"> </span><span class="s2">&quot;your_email@example.com&quot;</span><span class="w"></span>
+
+<span class="w">    </span><span class="p">(</span><span class="n">Don</span><span class="err">’</span><span class="n">t</span><span class="w"> </span><span class="n">type</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="o">$</span><span class="p">;</span><span class="w"> </span><span class="n">that</span><span class="w"> </span><span class="n">just</span><span class="w"> </span><span class="n">indicates</span><span class="w"> </span><span class="n">that</span><span class="w"> </span><span class="n">you</span><span class="err">’</span><span class="n">re</span><span class="w"> </span><span class="n">doing</span><span class="w"> </span><span class="n">this</span><span class="w"> </span><span class="n">at</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">command</span><span class="w"> </span><span class="n">line</span><span class="o">.</span><span class="p">)</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">I</span><span class="w"> </span><span class="n">also</span><span class="w"> </span><span class="n">do</span><span class="p">:</span><span class="w"></span>
+
+<span class="w">    </span><span class="o">$</span><span class="w"> </span><span class="n">git</span><span class="w"> </span><span class="n">config</span><span class="w"> </span><span class="o">--</span><span class="n">global</span><span class="w"> </span><span class="n">color</span><span class="o">.</span><span class="n">ui</span><span class="w"> </span><span class="bp">true</span><span class="w"></span>
+<span class="w">    </span><span class="o">$</span><span class="w"> </span><span class="n">git</span><span class="w"> </span><span class="n">config</span><span class="w"> </span><span class="o">--</span><span class="n">global</span><span class="w"> </span><span class="n">core</span><span class="o">.</span><span class="n">editor</span><span class="w"> </span><span class="n">emacs</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">The</span><span class="w"> </span><span class="n">first</span><span class="w"> </span><span class="n">of</span><span class="w"> </span><span class="n">these</span><span class="w"> </span><span class="n">will</span><span class="w"> </span><span class="n">enable</span><span class="w"> </span><span class="n">colored</span><span class="w"> </span><span class="n">output</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">terminal</span><span class="p">;</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">second</span><span class="w"> </span><span class="n">tells</span><span class="w"> </span><span class="n">git</span><span class="w"> </span><span class="n">that</span><span class="w"> </span><span class="n">you</span><span class="w"> </span><span class="n">want</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="n">use</span><span class="w"> </span><span class="n">emacs</span><span class="o">.</span><span class="w"></span>
+
+<span class="n">Set</span><span class="w"> </span><span class="n">up</span><span class="w"> </span><span class="n">ssh</span><span class="w"> </span><span class="n">on</span><span class="w"> </span><span class="n">your</span><span class="w"> </span><span class="n">computer</span><span class="o">.</span><span class="w"> </span><span class="n">I</span><span class="w"> </span><span class="n">like</span><span class="w"> </span><span class="n">Roger</span><span class="w"> </span><span class="n">Peng</span><span class="err">’</span><span class="n">s</span><span class="w"> </span><span class="n">guide</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="n">setting</span><span class="w"> </span><span class="n">up</span><span class="w"> </span><span class="n">password</span><span class="o">-</span><span class="n">less</span><span class="w"> </span><span class="n">logins</span><span class="o">.</span><span class="w"> </span><span class="n">Also</span><span class="w"> </span><span class="n">see</span><span class="w"> </span><span class="n">github</span><span class="err">’</span><span class="n">s</span><span class="w"> </span><span class="n">guide</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="n">generating</span><span class="w"> </span><span class="n">SSH</span><span class="w"> </span><span class="n">keys</span><span class="o">.</span><span class="w"></span>
+<span class="w">    </span><span class="n">Look</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="n">see</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="n">you</span><span class="w"> </span><span class="n">have</span><span class="w"> </span><span class="n">files</span><span class="w"> </span><span class="o">~/.</span><span class="n">ssh</span><span class="o">/</span><span class="n">id_rsa</span><span class="w"> </span><span class="ow">and</span><span class="w"> </span><span class="o">~/.</span><span class="n">ssh</span><span class="o">/</span><span class="n">id_rsa</span><span class="o">.</span><span class="n">pub</span><span class="o">.</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">If</span><span class="w"> </span><span class="ow">not</span><span class="p">,</span><span class="w"> </span><span class="n">create</span><span class="w"> </span><span class="n">such</span><span class="w"> </span><span class="n">public</span><span class="o">/</span><span class="n">private</span><span class="w"> </span><span class="n">keys</span><span class="p">:</span><span class="w"> </span><span class="n">Open</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">terminal</span><span class="o">/</span><span class="n">shell</span><span class="w"> </span><span class="ow">and</span><span class="w"> </span><span class="n">type</span><span class="p">:</span><span class="w"></span>
+
+<span class="w">    </span><span class="o">$</span><span class="w"> </span><span class="n">ssh</span><span class="o">-</span><span class="n">keygen</span><span class="w"> </span><span class="o">-</span><span class="n">t</span><span class="w"> </span><span class="n">rsa</span><span class="w"> </span><span class="o">-</span><span class="n">C</span><span class="w"> </span><span class="s2">&quot;your_email@example.com&quot;</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">Copy</span><span class="w"> </span><span class="n">your</span><span class="w"> </span><span class="n">public</span><span class="w"> </span><span class="n">key</span><span class="w"> </span><span class="p">(</span><span class="n">the</span><span class="w"> </span><span class="n">contents</span><span class="w"> </span><span class="n">of</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">newly</span><span class="o">-</span><span class="n">created</span><span class="w"> </span><span class="n">id_rsa</span><span class="o">.</span><span class="n">pub</span><span class="w"> </span><span class="n">file</span><span class="p">)</span><span class="w"> </span><span class="n">into</span><span class="w"> </span><span class="n">your</span><span class="w"> </span><span class="n">clipboard</span><span class="o">.</span><span class="w"> </span><span class="n">On</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">Mac</span><span class="p">,</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">terminal</span><span class="o">/</span><span class="n">shell</span><span class="p">,</span><span class="w"> </span><span class="n">type</span><span class="p">:</span><span class="w"></span>
+
+<span class="w">    </span><span class="o">$</span><span class="w"> </span><span class="n">pbcopy</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="o">~/.</span><span class="n">ssh</span><span class="o">/</span><span class="n">id_rsa</span><span class="o">.</span><span class="n">pub</span><span class="w"></span>
+
+<span class="n">Paste</span><span class="w"> </span><span class="n">your</span><span class="w"> </span><span class="n">ssh</span><span class="w"> </span><span class="n">public</span><span class="w"> </span><span class="n">key</span><span class="w"> </span><span class="n">into</span><span class="w"> </span><span class="n">your</span><span class="w"> </span><span class="n">github</span><span class="w"> </span><span class="n">account</span><span class="w"> </span><span class="n">settings</span><span class="o">.</span><span class="w"></span>
+<span class="w">    </span><span class="n">Go</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="n">your</span><span class="w"> </span><span class="n">github</span><span class="w"> </span><span class="n">Account</span><span class="w"> </span><span class="n">Settings</span><span class="w"></span>
+<span class="w">    </span><span class="n">Click</span><span class="w"> </span><span class="err">“</span><span class="n">SSH</span><span class="w"> </span><span class="n">Keys</span><span class="err">”</span><span class="w"> </span><span class="n">on</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">left</span><span class="o">.</span><span class="w"></span>
+<span class="w">    </span><span class="n">Click</span><span class="w"> </span><span class="err">“</span><span class="n">Add</span><span class="w"> </span><span class="n">SSH</span><span class="w"> </span><span class="n">Key</span><span class="err">”</span><span class="w"> </span><span class="n">on</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">right</span><span class="o">.</span><span class="w"></span>
+<span class="w">    </span><span class="n">Add</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">label</span><span class="w"> </span><span class="p">(</span><span class="n">like</span><span class="w"> </span><span class="err">“</span><span class="n">My</span><span class="w"> </span><span class="n">laptop</span><span class="err">”</span><span class="p">)</span><span class="w"> </span><span class="ow">and</span><span class="w"> </span><span class="n">paste</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">public</span><span class="w"> </span><span class="n">key</span><span class="w"> </span><span class="n">into</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">big</span><span class="w"> </span><span class="n">text</span><span class="w"> </span><span class="n">box</span><span class="o">.</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">In</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">terminal</span><span class="o">/</span><span class="n">shell</span><span class="p">,</span><span class="w"> </span><span class="n">type</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">following</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="n">test</span><span class="w"> </span><span class="n">it</span><span class="p">:</span><span class="w"></span>
+
+<span class="w">    </span><span class="o">$</span><span class="w"> </span><span class="n">ssh</span><span class="w"> </span><span class="o">-</span><span class="n">T</span><span class="w"> </span><span class="n">git</span><span class="err">@</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">If</span><span class="w"> </span><span class="n">it</span><span class="w"> </span><span class="n">says</span><span class="w"> </span><span class="n">something</span><span class="w"> </span><span class="n">like</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">following</span><span class="p">,</span><span class="w"> </span><span class="n">it</span><span class="w"> </span><span class="n">worked</span><span class="p">:</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">Hi</span><span class="w"> </span><span class="n">username</span><span class="o">!</span><span class="w"> </span><span class="n">You</span><span class="s1">&#39;ve successfully authenticated, but Github does</span>
+<span class="w">    </span><span class="ow">not</span><span class="w"> </span><span class="n">provide</span><span class="w"> </span><span class="n">shell</span><span class="w"> </span><span class="n">access</span><span class="o">.</span><span class="w"></span>
+</code></pre></div>
+
+<h2 id="gitgithub">git/github</h2>
+<p>As you collaborate with others and start releasing official versions you will use more and more
+git commands, but initially you can with by with adding, committing, and pushing your changes.
+Let&rsquo;s make you master a few concepts as covered in this <a href="tutorials/git_github.md">git/github tutorial</a>.</p>
+<h2 id="markdown">markdown</h2>
+<h2 id="github-pages-and-using-html-and-html-in-markdown">github pages and using HTML and HTML in markdown</h2>
+<h2 id="automating-your-call-to-fpm-test">Automating your call to fpm test</h2>
+<h2 id="automating-your-page-deployment-httpsgithubcomjamesivesgithub-pages-deploy-action">Automating your page deployment  https://github.com/JamesIves/github-pages-deploy-action</h2>
+<h2 id="github-topics">github topics</h2>
+<p>Any project complete enough should generate a github <strong>Release</strong> and add the topic &ldquo;fortran-package-manager&rdquo;
+to their github repository. </p>
+<p>Putting out a release lets users know you have reached a milestone where something is fully useable.
+It is very easy to overlook making a release, but a lot of consumers of github packages consider it a red flag
+if no release is present.</p>
+<p>Topic names that are well chosen make it much easier to find your project. In particular, fpm(1) projects want
+to include the topic <a href="https://github.com/topics/fortran-package-manager">fortran-package-manager</a>. Then, if
+you click on the topic you will see a burgeoning list of other fpm(1)-compatible packages.</p>
+<h2 id="fortran-references">Fortran References</h2>
+<ul>
+<li><strong>fpm resources</strong></li>
+<li><a href="https://github.com/fortran-lang/fpm">fpm(Fortran Package Manager)</a></li>
+<li><a href="https://github.com/fortran-lang/fpm/blob/master/manifest-reference.md">fpm manifest file</a> or your fpm.toml file</li>
+<li><strong>git resources</strong></li>
+<li><strong>github resources</strong></li>
+<li><a href="https://github.com">github.com</a></li>
+<li><a href="https://docs.github.com/en/actions">github actions</a></li>
+<li>[github markdown]</li>
+<li><strong>Fortran reference materials</strong></li>
+<li><a href="https://j3-fortran.org/doc/year/18/18-007r1.pdf">Fortran 2018 Standard</a></li>
+<li><a href="https://gcc.gnu.org/onlinedocs/gfortran/Intrinsic-Procedures.html">GNU gfortran intrinsic descriptions</a></li>
+<li><a href="https://j3-fortran.org">J3</a></li>
+<li><strong>compiler information</strong></li>
+<li><a href="http://gcc.gnu.org">GNU gcc</a></li>
+<li>**automatic documentation tools</li>
+<li><a href="https://politicalphysicist.github.io/ford-fortran-documentation.html">ford</a></li>
+<li><a href="https://www.doxygen.nl/index.html">doxygen</a></li>
+<li><strong>Fortran resources</strong></li>
+<li><a href="http://fortranwiki.org">Fortran Wiki</a> contains information on many Fortran resources</li>
+<li><a href="https://fortran-lang.discourse.group">Fortran Discourse</a></li>
+<li><a href="https://groups.google.com/forum/#!forum/comp.lang.fortran">Google Fortran newsgroup</a></li>
+<li><a href="https://fortran-lang.org">Fortran-lang</a></li>
+<li><a href="https://github.com/fortran-lang/stdlib">Fortran Standard Library project</a></li>
+</ul>
+        </div>
+          <div class="col-md-4">
+            <div class="card card-body bg-light">
+              <h2 class="card-title">Developer Info</h2>
+              <h4 class="card-text">John Doe</h4>
+              <p class="card-text"></p>
+                <div class="text-center"><div class="btn-group" role="group">
+                    
+                    <a class="btn btn-lg btn-primary" href="https://github.com/johndoe/easy"><i class="fa fa-github fa-lg"></i></a>
+                    
+                    
+                    
+                    
+                    
+                    
+                </div></div>
+            </div>
+          </div>
+      </div>
+        <div class="row">
+          <hr>
+          <div class="col-xs-6 col-sm-4">
+            <div>
+              <h3>Source Files</h3>
+              <ul><li><a href='sourcefile/check.f90.html'>check.f90</a></li><li><a href='sourcefile/easy.f90.html'>easy.f90</a></li><li><a href='sourcefile/easy__sample.f90.html'>easy__sample.f90</a></li><li><a href='sourcefile/main.f90.html'>main.f90</a></li></ul>
+            </div>
+            <div>
+              <ul>
+                <li><a href="./lists/files.html"><em>All source files&hellip;</em></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xs-6 col-sm-4">
+            <div>
+              <h3>Modules</h3>
+              <ul><li><a href='module/easy.html'>easy</a></li><li><a href='module/easy__sample.html'>easy__sample</a></li></ul>
+            </div>
+            <div>
+              <ul>
+                <li><a href="./lists/modules.html"><em>All modules&hellip;</em></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xs-6 col-sm-4">
+            <div>
+              <h3>Procedures</h3>
+              <ul><li><a href='proc/mysin.html'>mysin</a></li><li><a href='proc/mysqrt.html'>mysqrt</a></li><li><a href='proc/say_hello.html'>say_hello</a></li></ul>
+            </div>
+            <div>
+              <ul>
+                <li><a href="./lists/procedures.html"><em>All procedures&hellip;</em></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      <hr>
+    </div> <!-- /container -->
+    <footer>
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col">
+            <p>
+              easy
+ was developed by John Doe<br>              &copy; 2025 
+</p>
+          </div>
+          <div class="col">
+            <p class="text-end">
+              Documentation generated by
+              <a href="https://github.com/Fortran-FOSS-Programmers/ford">FORD</a>
+ on 2025-07-11 00:06 +0000             </p>
+          </div>
+        </div>
+        <br>
+      </div> <!-- /container -->
+    </footer>
+  </body>
+</html>
